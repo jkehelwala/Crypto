@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "Crypto\Crypto.csproj", "{EB6F837F-0DE1-4DA3-B540-622F8202B508}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CryptoInstaller", "CryptoInstaller\CryptoInstaller.vdproj", "{E56E6819-B7FA-46C1-9E73-9A9C783556A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB6F837F-0DE1-4DA3-B540-622F8202B508}.Debug|x86.ActiveCfg = Debug|x86
+		{EB6F837F-0DE1-4DA3-B540-622F8202B508}.Debug|x86.Build.0 = Debug|x86
+		{EB6F837F-0DE1-4DA3-B540-622F8202B508}.Release|x86.ActiveCfg = Release|x86
+		{EB6F837F-0DE1-4DA3-B540-622F8202B508}.Release|x86.Build.0 = Release|x86
+		{E56E6819-B7FA-46C1-9E73-9A9C783556A6}.Debug|x86.ActiveCfg = Debug
+		{E56E6819-B7FA-46C1-9E73-9A9C783556A6}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

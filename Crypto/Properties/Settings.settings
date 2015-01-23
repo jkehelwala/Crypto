@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Crypto.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SecQ1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sample Security Question 1</Value>
+    </Setting>
+    <Setting Name="SecQ2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sample Security Question 2</Value>
+    </Setting>
+    <Setting Name="SecA1" Description="answer1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0867242ac694edd3b127cb1e9f9d6512</Value>
+    </Setting>
+    <Setting Name="SecA2" Description="answer2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">496b7cd0617ee46f2505b63e8fe7b145</Value>
+    </Setting>
+    <Setting Name="PassOpen" Description="passopen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">a1e1e7173e3dcb0bfdb312bb140cdb19</Value>
+    </Setting>
+    <Setting Name="PassClose" Description="passclose" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2e5ce0761302861ea78195a28116b1cd</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
