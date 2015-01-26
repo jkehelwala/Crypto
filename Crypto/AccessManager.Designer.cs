@@ -36,17 +36,17 @@
             this.lbltxtA2 = new System.Windows.Forms.Label();
             this.txtQ2 = new System.Windows.Forms.TextBox();
             this.gbxConf = new System.Windows.Forms.GroupBox();
+            this.btnConf = new System.Windows.Forms.Button();
             this.txtConfNew = new System.Windows.Forms.TextBox();
             this.lbltxtConfNew = new System.Windows.Forms.Label();
+            this.lblConf = new System.Windows.Forms.Label();
             this.gbvVuln = new System.Windows.Forms.GroupBox();
+            this.btnVuln = new System.Windows.Forms.Button();
             this.txtVulnNew = new System.Windows.Forms.TextBox();
             this.lbltxtVulnNew = new System.Windows.Forms.Label();
+            this.lblVuln = new System.Windows.Forms.Label();
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnSecInfo = new System.Windows.Forms.Button();
-            this.btnVuln = new System.Windows.Forms.Button();
-            this.lblVuln = new System.Windows.Forms.Label();
-            this.btnConf = new System.Windows.Forms.Button();
-            this.lblConf = new System.Windows.Forms.Label();
             this.lbltxtQ2 = new System.Windows.Forms.Label();
             this.lbltxtQ1 = new System.Windows.Forms.Label();
             this.gbxConf.SuspendLayout();
@@ -112,6 +112,20 @@
             this.gbxConf.TabStop = false;
             this.gbxConf.Text = " Confidential Password ";
             // 
+            // btnConf
+            // 
+            this.btnConf.Image = global::Crypto.Properties.Resources.edit;
+            this.btnConf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConf.Location = new System.Drawing.Point(137, 40);
+            this.btnConf.Name = "btnConf";
+            this.btnConf.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnConf.Size = new System.Drawing.Size(70, 35);
+            this.btnConf.TabIndex = 11;
+            this.btnConf.Text = "Update";
+            this.btnConf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConf.UseVisualStyleBackColor = true;
+            this.btnConf.Click += new System.EventHandler(this.btnConf_Click);
+            // 
             // txtConfNew
             // 
             this.txtConfNew.Location = new System.Drawing.Point(24, 55);
@@ -128,6 +142,18 @@
             this.lbltxtConfNew.TabIndex = 11;
             this.lbltxtConfNew.Text = "Enter New Password";
             // 
+            // lblConf
+            // 
+            this.lblConf.AutoSize = true;
+            this.lblConf.Image = global::Crypto.Properties.Resources.lockimg;
+            this.lblConf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblConf.Location = new System.Drawing.Point(180, -1);
+            this.lblConf.MinimumSize = new System.Drawing.Size(22, 22);
+            this.lblConf.Name = "lblConf";
+            this.lblConf.Size = new System.Drawing.Size(22, 22);
+            this.lblConf.TabIndex = 9;
+            this.lblConf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // gbvVuln
             // 
             this.gbvVuln.Controls.Add(this.btnVuln);
@@ -140,6 +166,20 @@
             this.gbvVuln.TabIndex = 12;
             this.gbvVuln.TabStop = false;
             this.gbvVuln.Text = "Vulnerable Password ";
+            // 
+            // btnVuln
+            // 
+            this.btnVuln.Image = global::Crypto.Properties.Resources.edit;
+            this.btnVuln.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVuln.Location = new System.Drawing.Point(137, 40);
+            this.btnVuln.Name = "btnVuln";
+            this.btnVuln.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnVuln.Size = new System.Drawing.Size(70, 35);
+            this.btnVuln.TabIndex = 16;
+            this.btnVuln.Text = "Update";
+            this.btnVuln.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVuln.UseVisualStyleBackColor = true;
+            this.btnVuln.Click += new System.EventHandler(this.btnVuln_Click);
             // 
             // txtVulnNew
             // 
@@ -156,6 +196,18 @@
             this.lbltxtVulnNew.Size = new System.Drawing.Size(106, 13);
             this.lbltxtVulnNew.TabIndex = 15;
             this.lbltxtVulnNew.Text = "Enter New Password";
+            // 
+            // lblVuln
+            // 
+            this.lblVuln.AutoSize = true;
+            this.lblVuln.Image = global::Crypto.Properties.Resources.visible;
+            this.lblVuln.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblVuln.Location = new System.Drawing.Point(180, -2);
+            this.lblVuln.MinimumSize = new System.Drawing.Size(22, 22);
+            this.lblVuln.Name = "lblVuln";
+            this.lblVuln.Size = new System.Drawing.Size(22, 22);
+            this.lblVuln.TabIndex = 9;
+            this.lblVuln.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnBackup
             // 
@@ -184,58 +236,6 @@
             this.btnSecInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSecInfo.UseVisualStyleBackColor = true;
             this.btnSecInfo.Click += new System.EventHandler(this.btnSecInfo_Click);
-            // 
-            // btnVuln
-            // 
-            this.btnVuln.Image = global::Crypto.Properties.Resources.edit;
-            this.btnVuln.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVuln.Location = new System.Drawing.Point(137, 40);
-            this.btnVuln.Name = "btnVuln";
-            this.btnVuln.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnVuln.Size = new System.Drawing.Size(70, 35);
-            this.btnVuln.TabIndex = 16;
-            this.btnVuln.Text = "Update";
-            this.btnVuln.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVuln.UseVisualStyleBackColor = true;
-            this.btnVuln.Click += new System.EventHandler(this.btnVuln_Click);
-            // 
-            // lblVuln
-            // 
-            this.lblVuln.AutoSize = true;
-            this.lblVuln.Image = global::Crypto.Properties.Resources.visible;
-            this.lblVuln.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblVuln.Location = new System.Drawing.Point(180, -2);
-            this.lblVuln.MinimumSize = new System.Drawing.Size(22, 22);
-            this.lblVuln.Name = "lblVuln";
-            this.lblVuln.Size = new System.Drawing.Size(22, 22);
-            this.lblVuln.TabIndex = 9;
-            this.lblVuln.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btnConf
-            // 
-            this.btnConf.Image = global::Crypto.Properties.Resources.edit;
-            this.btnConf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConf.Location = new System.Drawing.Point(137, 40);
-            this.btnConf.Name = "btnConf";
-            this.btnConf.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnConf.Size = new System.Drawing.Size(70, 35);
-            this.btnConf.TabIndex = 11;
-            this.btnConf.Text = "Update";
-            this.btnConf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConf.UseVisualStyleBackColor = true;
-            this.btnConf.Click += new System.EventHandler(this.btnConf_Click);
-            // 
-            // lblConf
-            // 
-            this.lblConf.AutoSize = true;
-            this.lblConf.Image = global::Crypto.Properties.Resources.lockimg;
-            this.lblConf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblConf.Location = new System.Drawing.Point(180, -1);
-            this.lblConf.MinimumSize = new System.Drawing.Size(22, 22);
-            this.lblConf.Name = "lblConf";
-            this.lblConf.Size = new System.Drawing.Size(22, 22);
-            this.lblConf.TabIndex = 9;
-            this.lblConf.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbltxtQ2
             // 
@@ -289,7 +289,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Access Manager";
-            this.TopMost = true;
             this.gbxConf.ResumeLayout(false);
             this.gbxConf.PerformLayout();
             this.gbvVuln.ResumeLayout(false);

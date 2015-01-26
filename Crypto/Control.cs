@@ -99,6 +99,16 @@ namespace Crypto
             }
         }
 
+        private void setPasswordGroups(bool notFromDb)
+        {
+            dgvGroups.Rows.Clear();
+            cmbGroups.Items.Clear();
+            foreach (PassGroup a in groupList)
+            {
+                dgvGroups.Rows.Add(new String[] { a.GroupId.ToString(), a.GroupName });
+            }
+        }
+
         private void setPasswordGroups(List<string> lst)
         {
             dgvGroups.Rows.Clear();
@@ -237,6 +247,7 @@ namespace Crypto
         //Group
         private void btnGAdd_Click(object sender, EventArgs e)
         {
+            ItemLists.lastPassGroup = null;
             new ManageGroup().ShowDialog();
             if (ItemLists.lastPassGroup != null)
             {
@@ -245,7 +256,7 @@ namespace Crypto
                 groupNIndex.Sort();
                 groupList.Insert(groupNIndex.IndexOf(added.GroupName),added);
                 cmbGroups.Items.Add(added.GroupName);
-                dgvGroups.Rows.Add(new String[] { added.GroupId.ToString(), added.GroupName });
+                setPasswordGroups(true);
             }
         }
 
@@ -320,6 +331,7 @@ namespace Crypto
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            ItemLists.lastPassword = null;
             new ManagePassword().ShowDialog();
             if (ItemLists.lastPassword != null)
             {
@@ -549,6 +561,26 @@ namespace Crypto
             }
 
 
+        }
+
+        private void txtPwrds_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtPwrds.Text != "")
+            {
+                btnSearchPwrds.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txtGroups_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && txtGroups.Text != "")
+            {
+                btnSearchGroups.PerformClick();
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
         
        

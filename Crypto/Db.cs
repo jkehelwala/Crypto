@@ -7,8 +7,7 @@ namespace Crypto
         protected enum DbTable { pwords, pgroups, grouped };
         protected enum PCol { p_id, p_name, p_site, p_username, p_email, p_value, p_safe };
         protected enum GCol { g_id, g_name, g_desc } ;
-        protected enum GPCol { g_id, p_id };
-
+        protected enum GPCol { g_id, p_id };        
         public static string conSrc = "Data Source=" + Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\TheAurors\\Crypto\\cryptodb.sdf;password=passdb;encrypt database=true";
 
         protected string Get(DbTable tbl)

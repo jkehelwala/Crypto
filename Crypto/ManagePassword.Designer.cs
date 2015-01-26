@@ -204,7 +204,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Password";
-            this.TopMost = true;
             this.pnlCtrl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

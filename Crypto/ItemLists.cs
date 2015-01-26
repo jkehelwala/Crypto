@@ -97,8 +97,18 @@ namespace Crypto
 
         public List<PassGroup> getGroups()
         {
-            List<PassGroup> groupList = new List<PassGroup>();              
-            string query = @"select * from " + Get(DbTable.pgroups) + " order by " + Get(GCol.g_name);
+            List<PassGroup> groupList = new List<PassGroup>();
+            string query = "";
+
+            if (notSafe)
+            {
+                query = @"select g." + Get(GCol.g_id) + ", g." + Get(GCol.g_name) + ", g." + Get(GCol.g_desc) + " from " + Get(DbTable.pgroups) + " g inner join " + Get(DbTable.grouped) +
+                     " gr on g." + Get(GCol.g_id) + " =  gr." + Get(GPCol.g_id) + " group by g." + Get(GCol.g_id) + ", g." + Get(GCol.g_name) + ", g." + Get(GCol.g_desc) + " having (count(gr." + Get(GPCol.p_id) + ") > 2) order by g." + Get(GCol.g_name);
+            }
+            else
+            {
+                query = @"select * from " + Get(DbTable.pgroups) + " order by " + Get(GCol.g_name);
+            }
 
             using (SqlCeConnection con = new SqlCeConnection(conSrc))
             {
@@ -109,7 +119,6 @@ namespace Crypto
                     {
                         while (extGroup.Read())
                         {
-
                             int id = Convert.ToInt32(extGroup[Get(GCol.g_id)]);
                             string name = extGroup[Get(GCol.g_name)].ToString();
                             string desc = extGroup[Get(GCol.g_desc)].ToString();

@@ -22,11 +22,13 @@ namespace Crypto
             txtUname.Text = val.PassUserName;
             txtPwrd.Text = val.Passwrd;
             chkConfidential.Checked = val.Safe;
+            this.AcceptButton = btnEdit;
         }
 
         private void addInitiate()
         {
             this.Text = "Add " + this.Text;
+            this.AcceptButton = btnAdd;
         }
 
         public ManagePassword(Password pwrd)
@@ -65,7 +67,6 @@ namespace Crypto
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ItemLists.lastPassword = null;
             if (validate())
             {
                 val = new Password(txtName.Text, txtSite.Text, txtUname.Text, txtEmail.Text, txtPwrd.Text, chkConfidential.Checked);

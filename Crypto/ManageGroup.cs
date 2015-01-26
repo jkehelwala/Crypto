@@ -18,11 +18,13 @@ namespace Crypto
             this.Text = "Edit " + this.Text;
             txtGrpName.Text = val.GroupName;
             txtDesc.Text = val.GroupDesc;
+            this.AcceptButton = btnEdit;
         }
 
         private void addInitiate()
         {
             this.Text = "Add " + this.Text;
+            this.AcceptButton = btnAdd;
         }
 
         public ManageGroup(PassGroup grp)
@@ -48,7 +50,6 @@ namespace Crypto
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ItemLists.lastPassGroup = null;
             if (validate())
             {
                 val = new PassGroup(txtGrpName.Text, txtDesc.Text);

@@ -28,19 +28,15 @@ namespace Crypto
                 using (SqlCeConnection con = new SqlCeConnection(Db.conSrc))
                 {
                     con.Open();
-                    if (con.State == System.Data.ConnectionState.Open)
-                        result = true;
-                }               
+                }
             }
             catch (Exception ex)
             {
-                CustomMsgBox.Show("Invalid Database Connection. Application will not load" + ex.Message , Msg.Error);
+                CustomMsgBox.Show("Invalid Database Connection. Application will not load" + ex.Message, Msg.Error);
+                return;
             }
-            if (result)
-            {
-                Application.Run(new Login());
-                GC.KeepAlive(mutex);
-            }
+            Application.Run(new Login());
+            GC.KeepAlive(mutex);
         }
     }
 }

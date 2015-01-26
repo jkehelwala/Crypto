@@ -15,6 +15,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_705B94DB3E3A47DA8353635D975514C1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -154,6 +160,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_583C1DCD4857411EB687AAA1D3947C5F"
+            {
+            "SourcePath" = "8:..\\CryptoInstall.jpg"
+            "TargetName" = "8:CryptoInstall.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_067B423AEDB04F8787784B1314F49C05"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_75FD0E332766B2D81837FDBDAB9E7D51"
             {
             "AssemblyRegister" = "3:1"
@@ -190,7 +216,7 @@
             "SourcePath" = "8:..\\cryptodb.sdf"
             "TargetName" = "8:cryptodb.sdf"
             "Tag" = "8:"
-            "Folder" = "8:_5D51C9923D69421CB1586C31B9B05068"
+            "Folder" = "8:_9A8AFFDEBEDA4CD599F3668643D12132"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -274,22 +300,22 @@
             "Property" = "8:PersonalFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_AA6A01F5768A4E10BAA592440D3BD134"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_83A600F3A44545C8BCF2D5AAD6DAD6F3"
                     {
                     "Name" = "8:TheAurors"
                     "AlwaysCreate" = "11:TRUE"
                     "Condition" = "8:"
                     "Transitive" = "11:FALSE"
-                    "Property" = "8:_7F4AE77DEFBE49D19C50883AB65FC57F"
+                    "Property" = "8:_875466F06A0B43198873975080AEA00A"
                         "Folders"
                         {
-                            "{9EF0B969-E518-4E46-987F-47570745A589}:_5D51C9923D69421CB1586C31B9B05068"
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_9A8AFFDEBEDA4CD599F3668643D12132"
                             {
                             "Name" = "8:Crypto"
-                            "AlwaysCreate" = "11:TRUE"
+                            "AlwaysCreate" = "11:FALSE"
                             "Condition" = "8:"
                             "Transitive" = "11:FALSE"
-                            "Property" = "8:_4C234A2EB5364DE4AF6DC4B51B58B2F4"
+                            "Property" = "8:_C7D0290F1E0D4A65AE0ADE3BC87FB4EC"
                                 "Folders"
                                 {
                                 }
@@ -326,7 +352,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Crypto"
         "ProductCode" = "8:{0B4AC98C-7844-4D65-8139-A6D4C964C5F7}"
-        "PackageCode" = "8:{E12C795B-A6CF-4B96-9EC5-665A1F4CF6CE}"
+        "PackageCode" = "8:{D784726E-E690-46C3-8EB5-4BEC20D2F59B}"
         "UpgradeCode" = "8:{D0E704A8-DD98-462D-A257-6361D905B0E1}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -501,7 +527,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -532,7 +559,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -582,7 +610,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -604,7 +633,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -652,7 +682,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -683,7 +714,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -727,7 +759,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -771,7 +804,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -793,7 +827,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -828,7 +863,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_583C1DCD4857411EB687AAA1D3947C5F"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
