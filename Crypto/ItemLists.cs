@@ -103,7 +103,10 @@ namespace Crypto
             if (notSafe)
             {
                 query = @"select g." + Get(GCol.g_id) + ", g." + Get(GCol.g_name) + ", g." + Get(GCol.g_desc) + " from " + Get(DbTable.pgroups) + " g inner join " + Get(DbTable.grouped) +
-                     " gr on g." + Get(GCol.g_id) + " =  gr." + Get(GPCol.g_id) + " group by g." + Get(GCol.g_id) + ", g." + Get(GCol.g_name) + ", g." + Get(GCol.g_desc) + " having (count(gr." + Get(GPCol.p_id) + ") > 0) order by g." + Get(GCol.g_name);
+                     " gr on g." + Get(GCol.g_id) + " =  gr." + Get(GPCol.g_id) + " INNER JOIN " + Get(DbTable.pwords) +
+                     " p on p." + Get(PCol.p_id) + " =  gr." + Get(GPCol.p_id) + " WHERE (p." + Get(PCol.p_safe) + " = 0) group by g." 
+                     + Get(GCol.g_id) + ", g." + Get(GCol.g_name) + ", g." + Get(GCol.g_desc) + " having (count(gr." + Get(GPCol.p_id)
+                     + ") > 0) order by g." + Get(GCol.g_name);
             }
             else
             {
