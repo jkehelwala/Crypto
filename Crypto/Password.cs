@@ -1,5 +1,6 @@
 ﻿using System.Data.SqlServerCe;
 using System;
+using System.Windows.Forms;
 
 namespace Crypto
 {
@@ -125,16 +126,21 @@ namespace Crypto
         {
             int success = 0;
             string query = "delete from " + Get(DbTable.grouped) + " where " + Get(GPCol.p_id) + " = @deleteid ; ";
-            query += "delete from " + Get(DbTable.pwords) + " where " + Get(PCol.p_id) + " = @deleteid";
-            
+            string deleteQ= "delete from " + Get(DbTable.pwords) + " where " + Get(PCol.p_id) + " = @deleteid";
+
             using (SqlCeConnection con = new SqlCeConnection(conSrc))
             {
+                con.Open();
                 using (SqlCeCommand cmd = new SqlCeCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("deleteid", passId);
-                    con.Open();
-                    success = cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
                 }
+                using (SqlCeCommand cmd = new SqlCeCommand(deleteQ, con))
+                {
+                    cmd.Parameters.AddWithValue("deleteid", passId);
+                    success = cmd.ExecuteNonQuery();
+                } 
             }
             return success > 0;
         }
