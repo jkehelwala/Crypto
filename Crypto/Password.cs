@@ -1,6 +1,5 @@
-﻿using System.Data.SqlServerCe;
-using System;
-using System.Windows.Forms;
+﻿using System;
+using System.Data.SqlServerCe;
 
 namespace Crypto
 {
